@@ -18,4 +18,10 @@ assert sentence("Hiya","Casey","Have you enjoyed your meal") == "Hiya Casey. Hav
 
 (2 points) 
 """
+def sentence(a="Hello",b="Benjamin",c="How are you"):
+    sentence=""
+    sentence=str(a)+" "+str(b)+". "+str(c)
+    return sentence
 
+assert sentence("Hello") == "Hello Benjamin. How are you"
+assert sentence("Hiya","Casey","Have you enjoyed your meal") == "Hiya Casey. Have you enjoyed your meal"
